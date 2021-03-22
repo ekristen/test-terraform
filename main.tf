@@ -6,3 +6,15 @@ output "testing" {
   value = random_id.test.hex
 }
 
+output "files" {
+  value = [
+    {
+      filename = "first.txt"
+      value    = random_id.test.hex
+    },
+    {
+      filename = "second.txt"
+      value    = random_id.test.hex
+    }
+  ]
+}
