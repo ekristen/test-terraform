@@ -1,3 +1,7 @@
+variable "external_ip" {
+  default = "1.1.1.1"
+}
+
 resource "random_id" "test" {
   byte_length = 16
 }
@@ -14,3 +18,6 @@ output "testing2" {
   value = random_id.test2.hex
 }
 
+output "external_ip" {
+  value = var.external_ip
+}
