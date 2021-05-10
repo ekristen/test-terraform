@@ -3,5 +3,5 @@ resource "random_id" "test" {
 }
 
 output "openvpn_client_config" {
-  value = random_id.test.result
+  value = random_id.test.hex
 }
